@@ -1,6 +1,21 @@
 /* ==========================================================================
    Stake - Tienda de Stake
    Hoja de estilos principal
+
+   Índice:
+    1. Fuentes propias (@font-face)
+    2. Paleta de colores (variables)
+    3. Reset con el selector universal
+    4. Tamaños de texto en em
+    5. Colores y fondos
+    6. Propiedades de texto
+    7. Propiedades de fuente
+    8. Botonera del nav y listas del aside
+    9. Tabla de servicios
+   10. Menú fijo e icono de WhatsApp
+   11. Pseudoclases: filas de tablas y estados de enlaces
+   12. Formulario de contacto
+   13. Maquetación general y adaptación a móvil
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -822,4 +837,111 @@ address {
     padding: 1em 1.5em;
     border-left: 4px solid var(--verde);
     background-color: var(--gris-oscuro);
+}
+
+/* --------------------------------------------------------------------------
+   Maquetación general de la página
+   -------------------------------------------------------------------------- */
+/* Cabecera: logotipo y nombre de la tienda en la misma línea */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+header img {
+    display: block;
+}
+
+/* Contenido en dos columnas: sección principal y barra lateral */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2em;
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+}
+
+aside {
+    align-self: start;
+    border-radius: 0.6em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+article {
+    margin-bottom: 2em;
+    padding: 1.5em 2em;
+    border-radius: 0.6em;
+    border-left: 4px solid var(--verde);
+}
+
+article h2 {
+    margin-bottom: 0.6em;
+}
+
+article p {
+    margin-bottom: 0.8em;
+}
+
+/* Pie de página */
+footer {
+    padding: 2em 1.5em 5em;  /* Hueco abajo para que el botón de WhatsApp no tape el texto */
+    border-top: 2px solid var(--verde);
+}
+
+footer p {
+    margin: 0.6em 0;
+}
+
+/* Iconos de redes sociales en fila */
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 1em 0;
+}
+
+/* Mapa adaptable al ancho disponible */
+footer iframe {
+    display: block;
+    width: 100%;
+    max-width: 40em;
+    margin: 1em auto;
+    border: 2px solid var(--verde);
+    border-radius: 0.6em;
+}
+
+/* --------------------------------------------------------------------------
+   Pantallas pequeñas (móvil): una sola columna
+   -------------------------------------------------------------------------- */
+@media (max-width: 48em) {
+    header {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        padding: 1.2em;
+    }
+
+    fieldset {
+        padding: 1em;
+    }
+
+    /* La tabla se desplaza en horizontal si no cabe */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
 }
