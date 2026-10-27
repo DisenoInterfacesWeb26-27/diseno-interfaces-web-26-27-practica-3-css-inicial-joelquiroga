@@ -498,3 +498,59 @@ td {
 td:first-child {
     font-weight: 700;
 }
+
+/* --------------------------------------------------------------------------
+   Menú de navegación como botonera
+   -------------------------------------------------------------------------- */
+nav {
+    padding: 0.8em 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    display: block;
+    padding: 0.6em 1.6em;
+    background-color: var(--negro);
+    border: 2px solid var(--verde);
+    border-radius: 0.4em;
+}
+
+/* --------------------------------------------------------------------------
+   Listas del aside
+   -------------------------------------------------------------------------- */
+aside {
+    padding: 1.5em;
+}
+
+aside h2 {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--verde);
+}
+
+aside ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 1.5em;
+}
+
+aside li {
+    padding: 0.4em 0.5em;
+    border-bottom: 1px solid var(--gris-medio);
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+/* Viñeta cuadrada en el verde del logotipo */
+aside li::marker {
+    color: var(--verde);
+}
