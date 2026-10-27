@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Stake</title>
+</head>
+<body>
+    <!-- Cabecera de la web -->
+    <header>
+        <p>Stake - Tienda de Stake</p>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h1>Contacta con Stake</h1>
+
+            <!-- Formulario de contacto: todos los campos son obligatorios -->
+            <article>
+                <h2>Formulario de contacto</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Tus datos</legend>
+
+                        <!-- Máximo 40 caracteres, solo letras y números (se permiten espacios para nombre y apellidos) -->
+                        <p>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" maxlength="40" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9 ]{1,40}" title="Solo letras y números, máximo 40 caracteres" required autofocus>
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                        </p>
+
+                        <p>
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad" placeholder="Entre 18 y 99" min="18" max="99" required>
+                        </p>
+
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="600123456" pattern="[0-9]{9}" title="9 dígitos sin espacios" required>
+                        </p>
+
+                        <p>
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" name="consulta" rows="6" cols="40" placeholder="Escribe aquí tu consulta" required></textarea>
+                        </p>
+
+                        <!-- El checkbox no admite placeholder según el estándar HTML -->
+                        <p>
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad">He leído y acepto la <a href="politica-privacidad.html">política de privacidad y cookies</a></label>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar consulta</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+
+            <!-- Datos de contacto de la tienda -->
+            <article>
+                <h2>Datos de contacto</h2>
+                <address>
+                    <p>Stake - Tienda de Stake</p>
+                    <p>Calle Gran Vía, 28, 28013 Madrid</p>
+                    <p>Teléfono: <a href="tel:+34912345678">912 345 678</a></p>
+                    <p>Email: <a href="mailto:info@staketienda.es">info@staketienda.es</a></p>
+                </address>
+                <p>Horario: de lunes a sábado, de 10:00 a 21:00.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Historial</h2>
+            <ul>
+                <li><a href="index.html#novedades-octubre">Novedades de octubre</a></li>
+                <li><a href="index.html#novedades-septiembre">Novedades de septiembre</a></li>
+            </ul>
+
+            <h2>Enlaces interesantes</h2>
+            <ul>
+                <li><a href="https://www.sanidad.gob.es/">Ministerio de Sanidad</a></li>
+                <li><a href="https://www.ocu.org/">Organización de Consumidores y Usuarios</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Stake - Tienda de Stake</p>
+        <p><a href="politica-privacidad.html">Política de privacidad y cookies</a></p>
+    </footer>
+</body>
+</html>
