@@ -10,3 +10,75 @@
     margin: 0;
     padding: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Tamaños de texto en em
+   1em = tamaño de letra del elemento padre (16px por defecto en el body).
+   Ojo: el em se acumula, un elemento a 0.9em dentro de otro a 0.9em
+   queda a 0.81em del body.
+   -------------------------------------------------------------------------- */
+body {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p,
+li,
+address {
+    font-size: 1em;
+}
+
+/* Nombre de la tienda en la cabecera */
+header p {
+    font-size: 1.8em;
+}
+
+nav a {
+    font-size: 1.1em;
+}
+
+aside {
+    font-size: 0.95em;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+/* Iconos de redes sociales del footer */
+footer i {
+    font-size: 1.8em;
+}
+
+/* Tablas */
+caption {
+    font-size: 1.1em;
+}
+
+th,
+td {
+    font-size: 0.95em;
+}
+
+/* Formularios: los controles no heredan el tamaño de letra por defecto */
+legend {
+    font-size: 1.2em;
+}
+
+label,
+input,
+textarea,
+button {
+    font-size: 1em;
+}
