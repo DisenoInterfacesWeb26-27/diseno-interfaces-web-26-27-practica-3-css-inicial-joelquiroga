@@ -554,3 +554,31 @@ aside li:last-child {
 aside li::marker {
     color: var(--verde);
 }
+
+/* --------------------------------------------------------------------------
+   Tabla de servicios
+   -------------------------------------------------------------------------- */
+table {
+    width: 100%;                /* Ocupa todo el ancho de su contenedor padre */
+    table-layout: auto;         /* Las celdas se ajustan al texto que contienen */
+    border-collapse: collapse;  /* Un único borde entre celdas */
+    margin: 1.5em 0;
+    border: 2px solid var(--verde);
+}
+
+caption {
+    caption-side: bottom;       /* Título en la parte de abajo */
+    padding-top: 0.8em;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.8em 1em;
+    border: 1px solid var(--gris-medio);
+}
+
+th {
+    border-color: var(--verde-oscuro);
+}
