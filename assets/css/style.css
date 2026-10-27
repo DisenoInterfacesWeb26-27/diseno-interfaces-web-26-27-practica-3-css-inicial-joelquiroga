@@ -619,3 +619,112 @@ nav {
 .whatsapp-fijo i {
     font-size: 2em;
 }
+
+/* --------------------------------------------------------------------------
+   Filas de las tablas
+   -------------------------------------------------------------------------- */
+/* Primera fila de cada tabla (la de los encabezados) */
+table tr:first-child {
+    background-color: var(--verde);
+}
+
+/* Filas del cuerpo: impares y pares de distinto color.
+   Va después para que la primera fila del tbody use el color de impar */
+table tbody tr:nth-child(odd) {
+    background-color: var(--gris-oscuro);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--gris-medio);
+}
+
+/* --------------------------------------------------------------------------
+   Estados de los enlaces (orden LVHA: link, visited, hover, active)
+   -------------------------------------------------------------------------- */
+
+/* Enlaces del contenido (artículos, formulario y datos de contacto) */
+main section a:link {
+    color: var(--verde);
+}
+
+main section a:visited {
+    color: var(--verde-oscuro);
+}
+
+main section a:hover {
+    color: var(--blanco);
+    text-decoration-color: var(--verde);
+}
+
+main section a:active {
+    color: var(--negro);
+    background-color: var(--verde);
+}
+
+/* Botonera del menú */
+nav a:link,
+nav a:visited {
+    color: var(--verde);
+    background-color: var(--negro);
+}
+
+nav a:hover {
+    color: var(--negro);
+    background-color: var(--verde);
+}
+
+nav a:active {
+    color: var(--negro);
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+}
+
+/* Enlaces del aside */
+aside a:link {
+    color: var(--texto);
+}
+
+aside a:visited {
+    color: var(--texto-suave);
+}
+
+aside a:hover {
+    color: var(--verde);
+    text-decoration: underline;
+}
+
+aside a:active {
+    color: var(--verde-oscuro);
+}
+
+/* Enlaces del footer (política de privacidad e iconos de redes) */
+footer a:link {
+    color: var(--texto-suave);
+}
+
+footer a:visited {
+    color: var(--texto-suave);
+}
+
+footer a:hover {
+    color: var(--verde);
+}
+
+footer a:active {
+    color: var(--verde-oscuro);
+}
+
+/* Botón fijo de WhatsApp */
+.whatsapp-fijo:link,
+.whatsapp-fijo:visited {
+    color: var(--blanco);
+}
+
+.whatsapp-fijo:hover {
+    background-color: var(--verde);
+    color: var(--negro);
+}
+
+.whatsapp-fijo:active {
+    background-color: var(--verde-oscuro);
+}
