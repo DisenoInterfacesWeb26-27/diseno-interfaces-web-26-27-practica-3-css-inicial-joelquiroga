@@ -4,6 +4,21 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   Paleta de colores (sacada del logotipo)
+   -------------------------------------------------------------------------- */
+:root {
+    --negro: #000000;
+    --gris-muy-oscuro: #111111;
+    --gris-oscuro: #1c1c1c;
+    --gris-medio: #2a2a2a;
+    --verde: #39e75f;
+    --verde-oscuro: #1fa83f;
+    --blanco: #ffffff;
+    --texto: #e6e6e6;
+    --texto-suave: #b3b3b3;
+}
+
+/* --------------------------------------------------------------------------
    Reset: todos los elementos sin margen interno ni externo
    -------------------------------------------------------------------------- */
 * {
@@ -81,4 +96,148 @@ input,
 textarea,
 button {
     font-size: 1em;
+}
+
+/* --------------------------------------------------------------------------
+   Colores y fondos: etiquetas de sección
+   -------------------------------------------------------------------------- */
+body {
+    background-color: var(--negro);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+nav {
+    background-color: var(--gris-oscuro);
+}
+
+main {
+    background-color: var(--negro);
+}
+
+section {
+    background-color: var(--negro);
+}
+
+article {
+    background-color: var(--gris-muy-oscuro);
+}
+
+aside {
+    background-color: var(--gris-oscuro);
+    color: var(--texto);
+}
+
+footer {
+    background-color: var(--gris-muy-oscuro);
+    color: var(--texto-suave);
+}
+
+address {
+    color: var(--texto);
+}
+
+h1,
+h2 {
+    color: var(--verde);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blanco);
+}
+
+a {
+    color: var(--verde);
+}
+
+/* --------------------------------------------------------------------------
+   Colores y fondos: etiquetas de contenido y texto
+   -------------------------------------------------------------------------- */
+p,
+li {
+    color: var(--texto);
+}
+
+/* El nombre de la tienda en blanco, como en el logotipo */
+header p {
+    color: var(--blanco);
+}
+
+strong {
+    color: var(--blanco);
+}
+
+em {
+    color: var(--verde);
+}
+
+/* --------------------------------------------------------------------------
+   Colores y fondos: etiquetas de formularios
+   -------------------------------------------------------------------------- */
+form {
+    background-color: var(--gris-muy-oscuro);
+}
+
+fieldset {
+    background-color: var(--gris-oscuro);
+    color: var(--texto);
+}
+
+legend {
+    color: var(--verde);
+}
+
+label {
+    color: var(--texto);
+}
+
+input,
+textarea {
+    background-color: var(--gris-medio);
+    color: var(--blanco);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--texto-suave);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--verde);
+}
+
+button {
+    background-color: var(--verde);
+    color: var(--negro);
+}
+
+/* --------------------------------------------------------------------------
+   Colores y fondos: etiquetas de tablas
+   -------------------------------------------------------------------------- */
+table {
+    background-color: var(--gris-oscuro);
+    color: var(--texto);
+}
+
+caption {
+    color: var(--texto-suave);
+}
+
+thead {
+    background-color: var(--verde);
+}
+
+th {
+    color: var(--negro);
+}
+
+td {
+    color: var(--texto);
 }
