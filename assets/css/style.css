@@ -53,6 +53,7 @@
     --blanco: #ffffff;
     --texto: #e6e6e6;
     --texto-suave: #b3b3b3;
+    --whatsapp: #25d366;
 }
 
 /* --------------------------------------------------------------------------
@@ -581,4 +582,40 @@ td {
 
 th {
     border-color: var(--verde-oscuro);
+}
+
+/* --------------------------------------------------------------------------
+   Menú fijo en la parte de arriba
+   Con sticky el menú se queda pegado arriba al hacer scroll sin tapar
+   la cabecera al cargar la página (con fixed habría que dejar hueco al body)
+   -------------------------------------------------------------------------- */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* --------------------------------------------------------------------------
+   Icono de WhatsApp fijo abajo a la derecha
+   -------------------------------------------------------------------------- */
+.whatsapp-fijo {
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: var(--whatsapp);
+    color: var(--blanco);
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-fijo i {
+    font-size: 2em;
 }
