@@ -241,3 +241,127 @@ th {
 td {
     color: var(--texto);
 }
+
+/* --------------------------------------------------------------------------
+   Propiedades de texto: etiquetas de sección
+   -------------------------------------------------------------------------- */
+body {
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+}
+
+/* Nombre de la tienda en mayúsculas y espaciado, como en el logotipo */
+header p {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 0.5em var(--verde);
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+address {
+    line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------------
+   Propiedades de texto: etiquetas de contenido y texto
+   -------------------------------------------------------------------------- */
+p {
+    text-align: justify;
+}
+
+/* Los párrafos de cabecera y pie no se justifican, van centrados */
+header p,
+footer p {
+    text-align: center;
+}
+
+li {
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+/* --------------------------------------------------------------------------
+   Propiedades de texto: etiquetas de formularios
+   -------------------------------------------------------------------------- */
+legend {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+label {
+    line-height: 2;
+}
+
+textarea {
+    line-height: 1.5;
+}
+
+button {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Propiedades de texto: etiquetas de tablas
+   -------------------------------------------------------------------------- */
+caption {
+    letter-spacing: 0.05em;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td {
+    line-height: 1.5;
+}
